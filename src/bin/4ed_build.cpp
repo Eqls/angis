@@ -115,7 +115,7 @@ char *arch_names[] = {
 #define PACK_DIR "../distributions"
 #define SITE_DIR "../site"
 
-#define FOREIGN "../4coder-non-source/foreign"
+#define FOREIGN "../foreign"
 #define FOREIGN_WIN "..\\4coder-non-source\\foreign"
 
 char *includes[] = {
@@ -759,7 +759,7 @@ package(Arena *arena, char *cdir, Tier_Code tier, Arch_Code arch)
     char *build_dir = fm_str(arena, BUILD_DIR);
     char *pack_dir = fm_str(arena, PACK_DIR);
     char *dist_files[3];
-    dist_files[0] = fm_str(arena, "../4coder-non-source/dist_files");
+    dist_files[0] = fm_str(arena, "../dist_files");
     dist_files[1] = fm_str(arena, "ship_files");
     dist_files[2] = fm_str(arena, "ship_files_super");
 
